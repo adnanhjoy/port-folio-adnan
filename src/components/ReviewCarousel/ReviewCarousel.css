@@ -1,0 +1,6 @@
+.review-bg{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('../../assets/review/bg.avif');
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+}

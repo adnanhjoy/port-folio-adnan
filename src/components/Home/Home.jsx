@@ -5,6 +5,7 @@ import About from '../About/About';
 import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
+import ReviewCarousel from '../ReviewCarousel/ReviewCarousel';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
                 <Header></Header>
                 <About></About>
                 <Skills></Skills>
+                <ReviewCarousel></ReviewCarousel>
                 <Contact></Contact>
                 <Footer></Footer>
             </Element>

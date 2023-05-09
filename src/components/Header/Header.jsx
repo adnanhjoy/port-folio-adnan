@@ -26,19 +26,19 @@ const Header = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><Link to='/' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
-                            <li><Link activeClass="active" to='about' spy={true} smooth={true} offset={50} duration={500}>About</Link></li>
-                            <li><Link to='skills' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
-                            <li><Link to='projects' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Projects</Link></li>
-                            <li><Link to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></li>
+                            <li><Link className=' text-black bg-transparent' to='/' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
+                            <li><Link className=' text-black bg-transparent' activeClass="active" to='about' spy={true} smooth={true} offset={50} duration={500}>About</Link></li>
+                            <li><Link className=' text-black bg-transparent' to='skills' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
+                            <li><Link className=' text-black bg-transparent' to='projects' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Projects</Link></li>
+                            <li><Link className=' text-black bg-transparent' to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></li>
                         </ul>
                     </div>
-                    <Link to='/'><img className='h-10 w-full lg:ps-10' src={logo} alt="" /></Link>
+                    <Link to='/' spy={true} smooth={true} offset={50} duration={500}><img className='h-10 w-full lg:ps-10 cursor-pointer' src={logo} alt="" /></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><Link className=' text-white bg-transparent' to='/' activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>Home</Link></li>
-                        <li><Link className=' text-white bg-transparent' activeClass="active" to='about' spy={true} smooth={true} offset={-100} duration={500}>About</Link></li>
+                        <li><Link className=' text-white bg-transparent' to='/' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
+                        <li><Link className=' text-white bg-transparent' activeClass="active" to='about' spy={true} smooth={true} offset={50} duration={500}>About</Link></li>
                         <li><Link className=' text-white bg-transparent' to='skills' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
                         <li><Link className=' text-white bg-transparent' to='projects' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Projects</Link></li>
                         <li><Link className=' text-white bg-transparent' to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></li>
@@ -53,8 +53,8 @@ const Header = () => {
                         <p className="mb-5 text-3xl flex justify-center">
                             <span className='me-2'>Hi I'm</span>
                             <Typical
-                                steps={['Adnna Hossain', 1000, 
-                                        'Web Developer', 500,]}
+                                steps={['Adnna Hossain', 1000,
+                                    'Web Developer', 500,]}
                                 loop={Infinity}
                                 wrapper='p'
                             />

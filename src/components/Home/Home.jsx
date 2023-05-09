@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Element } from 'react-scroll';
 import Header from '../Header/Header';
 import About from '../About/About';
@@ -6,18 +6,28 @@ import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import ReviewCarousel from '../ReviewCarousel/ReviewCarousel';
+import spinner from '../../assets/adnan-profile.png';
 
 const Home = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(()=>{
+        // setTimeout(() => setLoading(false), 2000);
+        setLoading(false);
+    },[])
+
     return (
         <div>
-            <Element name='/'>
+            {loading ? <div className='w-full h-screen m-auto flex justify-center items-center'>
+                <img className='h-10 w-10 animate-ping' src={spinner} alt="" />
+            </div> :<Element name='/'>
                 <Header></Header>
                 <About></About>
                 <Skills></Skills>
                 <ReviewCarousel></ReviewCarousel>
                 <Contact></Contact>
                 <Footer></Footer>
-            </Element>
+            </Element>}
         </div>
     );
 };

@@ -19,7 +19,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className={navcolor ? 'navbar nav-bg-color fixed top-0' : 'navbar bg-transparent fixed top-0'}>
+            <div style={{zIndex:'999'}} className={navcolor ? 'navbar nav-bg-color fixed top-0' : 'navbar bg-transparent fixed top-0'}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -59,7 +59,7 @@ const Header = () => {
                                 wrapper='p'
                             />
                         </p>
-                        <p className="mb-5 font-thin">I am seeking a challenging opportunity that will allow me to utilize my skills and abilities to achieve a challenging goal.</p>
+                        <p className="mb-5 font-thin text-white">I am seeking a challenging opportunity that will allow me to utilize my skills and abilities to achieve a challenging goal.</p>
                         <Link to='' className="btn btn-primary">Download Resume</Link>
                     </div>
                 </div>

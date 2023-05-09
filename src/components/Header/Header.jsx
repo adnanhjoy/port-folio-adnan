@@ -51,13 +51,13 @@ const Header = () => {
                         <p className="mb-5 text-3xl flex justify-center">
                             <span className='me-2'>Hi I'm</span>
                             <Typical
-                                steps={['Adnna Hossain', 1000,
+                                steps={['Adnan Hossain', 1000,
                                     'Web Developer', 500,]}
                                 loop={Infinity}
                                 wrapper='p'
                             />
                         </p>
-                        <p className="mb-5 font-thin text-white">I am seeking a challenging opportunity that will allow me to utilize my skills and abilities to achieve a challenging goal.</p>
+                        <p className="mb-5 font-normal text-white">I am seeking a challenging opportunity that will allow me to utilize my skills and abilities to achieve a challenging goal.</p>
                         <Link to='' className="btn btn-primary">Download Resume</Link>
                     </div>
                 </div>

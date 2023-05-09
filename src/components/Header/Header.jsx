@@ -33,9 +33,9 @@ const Header = () => {
                             <li><Link className=' text-black bg-transparent' to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></li>
                         </ul>
                     </div>
-                    <Link to='/' spy={true} smooth={true} offset={50} duration={500}><img className='h-10 w-full lg:ps-10 cursor-pointer' src={logo} alt="" /></Link>
+                    <Link to='/' spy={true} smooth={true} offset={50} duration={500}><img className='w-full lg:ps-10 cursor-pointer' src={logo} alt="" /></Link>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-end hidden lg:flex lg:pe-10">
                     <ul className="menu menu-horizontal px-1">
                         <li><Link className=' text-white bg-transparent' to='/' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
                         <li><Link className=' text-white bg-transparent' activeClass="active" to='about' spy={true} smooth={true} offset={50} duration={500}>About</Link></li>
@@ -43,8 +43,6 @@ const Header = () => {
                         <li><Link className=' text-white bg-transparent' to='projects' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Projects</Link></li>
                         <li><Link className=' text-white bg-transparent' to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></li>
                     </ul>
-                </div>
-                <div className="navbar-end pr-10">
                 </div>
             </div>
             <div className="hero min-h-screen background-img">

@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Element } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Skills = () => {
+    useEffect(() => {
+        AOS.init({duration: 2000})
+    },[])
+
     return (
-        <div>
+        <div data-aos="fade-up">
             <Element name='skills'>
                 <div className='min-h-full py-14'>
                     <h1 className='text-center text-4xl'>Skills & Info</h1>
                     <div className='grid md:grid-cols-2 gap-28 w-3/4 m-auto mt-14'>
-                        <div className=''>
+                        <div data-aos="fade-right" className=''>
                             <p>HTML</p>
                             <div className=' bg-slate-300 rounded h-4'>
                                 <div className=' bg-red-500 w-11/12 text-end pr-2 text-white rounded h-4 text-xs'>95%</div>
@@ -38,7 +44,7 @@ const Skills = () => {
                                 <div className=' bg-violet-600 w-3/4 text-end pr-2 text-white rounded h-4 text-xs'>80%</div>
                             </div>
                         </div>
-                        <div>
+                        <div data-aos="fade-left">
                             <span className='grid grid-cols-4 mt-5'>
                                 <p className='w-1/2'>Age</p>
                                 <p className='col-span-3'>21</p>

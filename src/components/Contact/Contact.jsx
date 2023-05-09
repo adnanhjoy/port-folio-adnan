@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Element } from 'react-scroll';
 import './Contact.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+    useEffect(() => {
+        AOS.init({duration: 2000})
+    },[])
+
     return (
-        <div>
+        <div data-aos="fade-up">
             <Element name='contact'>
                 <div className='py-14 contact-bg min-h-full flex flex-col items-center'>
                     <h1 className='text-center text-4xl mb-1 text-white'>Get in Touch</h1>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,10 +8,16 @@ import person1 from '../../assets/review/person1.jpg';
 import person2 from '../../assets/review/person2.jpg';
 import person3 from '../../assets/review/person3.jpg';
 import './ReviewCarousel.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ReviewCarousel = () => {
+    useEffect(() => {
+        AOS.init({duration: 2000})
+    },[])
+
     return (
-        <div className='review-bg'>
+        <div data-aos="fade-up" className='review-bg'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}

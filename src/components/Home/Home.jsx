@@ -12,14 +12,14 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
-        // setTimeout(() => setLoading(false), 2000);
-        setLoading(false);
+        setTimeout(() => setLoading(false), 2000);
     },[])
 
     return (
         <div>
-            {loading ? <div className='w-full h-screen m-auto flex justify-center items-center'>
-                <img className='h-10 w-10 animate-ping' src={spinner} alt="" />
+            {loading ? <div className='w-full h-screen m-auto flex justify-center items-center flex-col'>
+                <img className='h-10 w-10' src={spinner} alt="" />
+                <progress className="progress w-56 mt-10"></progress>
             </div> :<Element name='/'>
                 <Header></Header>
                 <About></About>

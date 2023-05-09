@@ -33,7 +33,7 @@ const Header = () => {
                             <li><Link to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></li>
                         </ul>
                     </div>
-                    <Link to='/'><img className='h-10 w-40 lg:ps-10' src={logo} alt="" /></Link>
+                    <Link to='/'><img className='h-10 w-full lg:ps-10' src={logo} alt="" /></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -59,8 +59,8 @@ const Header = () => {
                                 wrapper='p'
                             />
                         </p>
-                        <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <Link to='https://firebasestorage.googleapis.com/v0/b/adnan-hossain.appspot.com/o/Resume%20of%20Adnan%20Hossain.pdf?alt=media&token=9ec1637a-b786-49a4-b8a2-6a4cf92595bc' className="btn btn-primary">Download Resume</Link>
+                        <p className="mb-5 font-thin">I am seeking a challenging opportunity that will allow me to utilize my skills and abilities to achieve a challenging goal.</p>
+                        <Link to='' className="btn btn-primary">Download Resume</Link>
                     </div>
                 </div>
             </div>

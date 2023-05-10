@@ -17,7 +17,7 @@ const ReviewCarousel = () => {
     },[])
 
     return (
-        <div data-aos="fade-up" className='review-bg'>
+        <div data-aos="fade-up" className='review-bg h-fit'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}

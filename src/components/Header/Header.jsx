@@ -27,7 +27,7 @@ const Header = () => {
             <div style={{ zIndex: '999' }} className={navcolor ? 'nav-bg-color lg:fixed top-0 w-full' : ' bg-transparent lg:fixed  top-0 w-full'}  >
                 <header >
                     {/* className="absolute inset-x-0 top-0 z-50" */}
-                    <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                    <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
                         <div className="flex lg:flex-1">
                             {/* <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
@@ -62,7 +62,7 @@ const Header = () => {
                     </nav>
                     <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                         <div className="fixed inset-0 z-50" />
-                        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-8/12 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-8/12 overflow-y-auto nav-mobile-bg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                             <div className="flex items-center justify-between">
                                 <a href="#" className="-m-1.5 p-1.5">
                                     <span className="sr-only">Your Company</span>
@@ -74,7 +74,7 @@ const Header = () => {
                                 </a>
                                 <button
                                     type="button"
-                                    className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                                    className="-m-2.5 rounded-md p-2.5 text-white"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
                                     <span className="sr-only">Close menu</span>
@@ -84,11 +84,11 @@ const Header = () => {
                             <div className="mt-6 flow-root">
                                 <div className="-my-6 divide-y divide-gray-500/10">
                                     <div className="space-y-2 py-6">
-                                        <li className=' list-none'><Link className=' text-black cursor-pointer bg-transparent' to='/' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
-                                        <li className=' list-none'><Link className=' text-black cursor-pointer bg-transparent' activeClass="active" to='about' spy={true} smooth={true} offset={50} duration={500}>About</Link></li>
-                                        <li className=' list-none'><Link className=' text-black cursor-pointer bg-transparent' to='skills' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
-                                        <li className=' list-none'><Link className=' text-black cursor-pointer bg-transparent' to='projects' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Projects</Link></li>
-                                        <li className=' list-none'><Link className=' text-black cursor-pointer bg-transparent' to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></li>
+                                        <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' to='/' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
+                                        <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' activeClass="active" to='about' spy={true} smooth={true} offset={50} duration={500}>About</Link></li>
+                                        <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' to='skills' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
+                                        <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' to='projects' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Projects</Link></li>
+                                        <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></li>
                                     </div>
                                     {/* <div className="py-6">
                                     <a
@@ -108,7 +108,7 @@ const Header = () => {
             <div className="hero min-h-screen ">
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
-                        <p className="mb-5 text-3xl flex justify-center">
+                        <p className="mb-5 text-3xl flex justify-center text-white">
                             <span className='me-2'>I am</span>
                             
                             <Typewriter

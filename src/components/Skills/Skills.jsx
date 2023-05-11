@@ -11,7 +11,7 @@ const Skills = () => {
     return (
         <div data-aos="fade-up">
             <Element name='skills'>
-                <div className='min-h-full py-14'>
+                <div className='min-h-full py-14 text-white'>
                     <h1 className='text-center text-4xl'>Skills & Info</h1>
                     <div className='grid md:grid-cols-2 gap-28 w-3/4 m-auto mt-14'>
                         <div data-aos="fade-up" className=''>

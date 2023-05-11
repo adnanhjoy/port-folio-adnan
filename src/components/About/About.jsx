@@ -12,7 +12,7 @@ const About = () => {
     return (
         <div>
             <Element name='about'>
-            <div className='py-14 min-h-full'>
+            <div className='py-14 min-h-full text-white'>
                 <h1 className='text-center text-4xl'>About Me</h1>
                 <div className='grid gap-28 md:grid-cols-2 w-3/4 m-auto mt-14'>
                     <div className=' m-auto'>

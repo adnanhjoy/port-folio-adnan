@@ -6,6 +6,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import author from '../../assets/adnan-profile.png';
 import { Typewriter } from 'react-simple-typewriter'
+import { FaFacebook, FaFacebookSquare, FaGitSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -110,7 +111,7 @@ const Header = () => {
                     <div className="max-w-md">
                         <p className="mb-5 text-3xl flex justify-center text-white">
                             <span className='me-2'>I am</span>
-                            
+
                             <Typewriter
                                 words={['Adnan Hossain', 'Web Developer']}
                                 loop={0}
@@ -125,6 +126,11 @@ const Header = () => {
                         <Link to='' className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointer">Resume</Link>
                     </div>
                 </div>
+            </div>
+            <div className='fixed text-white top-72 left-8 z-50'>
+                <a href="https://www.facebook.com/engr.adnanhossain" target="blank" className='m-0 hover:text-blue-700'><FaFacebookSquare className=' w-8 h-8' /></a>
+                <a href="https://github.com/engadnanhossain" target="blank" className='m-0 hover:text-gray-600'><FaGithubSquare className=' w-8 h-8' /></a>
+                <a href="https://www.linkedin.com/in/engadnanhossain" target="blank" className='m-0 hover:text-blue-700'><FaLinkedin className=' w-8 h-8' /></a>
             </div>
         </div>
     );

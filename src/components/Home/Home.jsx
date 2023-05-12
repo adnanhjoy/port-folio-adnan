@@ -7,6 +7,7 @@ import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import ReviewCarousel from '../ReviewCarousel/ReviewCarousel';
 import spinner from '../../assets/adnan-profile.png';
+import BackToTopButton from '../BackToTop/BackToTopButton';
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ const Home = () => {
                 <ReviewCarousel></ReviewCarousel>
                 <Contact></Contact>
                 <Footer></Footer>
+                <BackToTopButton></BackToTopButton>
             </Element>}
         </div>
     );

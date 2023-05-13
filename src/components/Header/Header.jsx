@@ -25,7 +25,7 @@ const Header = () => {
     return (
         <div className='background-img'>
 
-            <div style={{ zIndex: '999' }} className={navcolor ? 'nav-bg-color lg:fixed top-0 w-full' : ' bg-transparent lg:fixed  top-0 w-full'}  >
+            <div style={{ zIndex: '999' }} className={navcolor ? 'nav-bg-color fixed top-0 w-full' : ' bg-transparent fixed  top-0 w-full'}  >
                 <header >
                     {/* className="absolute inset-x-0 top-0 z-50" */}
                     <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
@@ -61,18 +61,18 @@ const Header = () => {
                             login
                         </div> */}
                     </nav>
-                    <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+                    <Dialog  as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                         <div className="fixed inset-0 z-50" />
-                        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-8/12 overflow-y-auto nav-mobile-bg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <Dialog.Panel style={{zIndex: '999'}} className="fixed inset-y-0 right-0 z-50 w-8/12 overflow-y-auto nav-mobile-bg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ease-in-out delay-200">
                             <div className="flex items-center justify-between">
-                                <a href="#" className="-m-1.5 p-1.5">
+                                <p className="-m-1.5 p-1.5">
                                     <span className="sr-only">Your Company</span>
                                     <img
                                         className="h-8 w-auto"
                                         src={author}
                                         alt=""
                                     />
-                                </a>
+                                </p>
                                 <button
                                     type="button"
                                     className="-m-2.5 rounded-md p-2.5 text-white"
@@ -109,7 +109,8 @@ const Header = () => {
             <div className="hero min-h-screen ">
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
-                        <p className="mb-5 text-3xl flex justify-center text-white">
+                        <h2 className='uppercase text-white text-lg font-semibold tracking-widestn'>W e l c o m e</h2>
+                        <p className="my-5 text-3xl text-white">
                             <span className='me-2'>I am</span>
 
                             <Typewriter
@@ -122,8 +123,8 @@ const Header = () => {
                                 delaySpeed={3000}
                             />
                         </p>
-                        <p className="mb-5 font-normal text-white">I am seeking a challenging opportunity that will allow me to utilize my skills and abilities to achieve a challenging goal.</p>
-                        <Link to='' className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointer">Resume</Link>
+                        <p className=" mb-5 font-normal text-white">I am seeking a challenging opportunity that will allow me to utilize my skills and abilities to achieve a challenging goal.</p>
+                        <a href='/src/assets/resume/Resume of Adnan Hossain.pdf' className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointer" download>Download Resume</a>
                     </div>
                 </div>
             </div>

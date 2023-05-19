@@ -6,7 +6,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import author from '../../assets/adnan-profile.png';
 import { Typewriter } from 'react-simple-typewriter'
-import { FaFacebook, FaFacebookSquare, FaGitSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaBriefcase, FaFacebook, FaFacebookSquare, FaGitSquare, FaGithubSquare, FaHome, FaLaptopCode, FaLinkedin, FaRegEnvelope, FaUserGraduate } from "react-icons/fa";
 
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -61,9 +61,9 @@ const Header = () => {
                             login
                         </div> */}
                     </nav>
-                    <Dialog  as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+                    <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                         <div className="fixed inset-0 z-50" />
-                        <Dialog.Panel style={{zIndex: '999'}} className="fixed inset-y-0 right-0 z-50 w-8/12 overflow-y-auto nav-mobile-bg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ease-in-out delay-200">
+                        <Dialog.Panel style={{ zIndex: '999' }} className="fixed inset-y-0 right-0 z-50 w-8/12 overflow-y-auto nav-mobile-bg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ease-in-out delay-200">
                             <div className="flex items-center justify-between">
                                 <p className="-m-1.5 p-1.5">
                                     <span className="sr-only">Your Company</span>
@@ -85,11 +85,15 @@ const Header = () => {
                             <div className="mt-6 flow-root">
                                 <div className="-my-6 divide-y divide-gray-500/10">
                                     <div className="space-y-2 py-6">
-                                        <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' to='/' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
-                                        <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' activeClass="active" to='about' spy={true} smooth={true} offset={50} duration={500}>About</Link></li>
-                                        <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' to='skills' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
-                                        <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' to='projects' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Projects</Link></li>
-                                        <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></li>
+                                        <li className=' list-none'><Link className='flex items-center gap-4 text-white cursor-pointer bg-transparent' to='/' activeClass="active" spy={true} smooth={true} offset={50} duration={500}><FaHome className='hover:text-blue-800'></FaHome>Home</Link></li>
+
+                                        <li className=' list-none'><Link className='flex items-center gap-4 text-white cursor-pointer bg-transparent' activeClass="active" to='about' spy={true} smooth={true} offset={50} duration={500}><FaUserGraduate className='hover:text-blue-800' />About</Link></li>
+
+                                        <li className=' list-none'><Link className='flex items-center gap-4 text-white cursor-pointer bg-transparent' to='skills' activeClass="active" spy={true} smooth={true} offset={50} duration={500}><FaLaptopCode className='hover:text-blue-800' />Skills</Link></li>
+
+                                        <li className=' list-none'><Link className='flex items-center gap-4 text-white cursor-pointer bg-transparent' to='projects' activeClass="active" spy={true} smooth={true} offset={50} duration={500}><FaBriefcase className='hover:text-blue-800' />Projects</Link></li>
+
+                                        <li className=' list-none'><Link className='flex items-center gap-4 text-white cursor-pointer bg-transparent' to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}><FaRegEnvelope className='hover:text-blue-800' />Contact</Link></li>
                                     </div>
                                     {/* <div className="py-6">
                                     <a

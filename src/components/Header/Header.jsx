@@ -132,7 +132,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='fixed text-white top-72 left-8 z-50'>
+            <div className='fixed hidden md:block text-white top-72 left-8 z-50'>
                 <a href="https://www.facebook.com/engr.adnanhossain" target="blank" className='m-0 hover:text-blue-700'><FaFacebookSquare className=' w-8 h-8' /></a>
                 <a href="https://github.com/engadnanhossain" target="blank" className='m-0 hover:text-gray-600'><FaGithubSquare className=' w-8 h-8' /></a>
                 <a href="https://www.linkedin.com/in/engadnanhossain" target="blank" className='m-0 hover:text-blue-700'><FaLinkedin className=' w-8 h-8' /></a>

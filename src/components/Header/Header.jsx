@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import logo from '../../assets/logo.png';
+import resume from '../../assets/resume/Resume of Adnan Hossain.pdf'
 import './Header.css';
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -128,7 +129,7 @@ const Header = () => {
                             />
                         </p>
                         <p className=" mb-5 font-normal text-white">I am seeking a challenging opportunity that will allow me to utilize my skills and abilities to achieve a challenging goal.</p>
-                        <a href='/src/assets/resume/Resume of Adnan Hossain.pdf' className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointer" download>Download Resume</a>
+                        <a href={resume} className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointer" download>Download Resume</a>
                     </div>
                 </div>
             </div>

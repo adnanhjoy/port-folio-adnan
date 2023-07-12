@@ -1,0 +1,6 @@
+.card-bg {
+    background-image: url(../src/assets/project/korean.png);
+    background-size: cover;
+    width: 100%;
+    background-position: top;
+}

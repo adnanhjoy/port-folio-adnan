@@ -10,7 +10,7 @@ const About = () => {
     },[])
     
     return (
-        <div>
+        <div className='container mx-auto'>
             <Element name='about'>
             <div className='py-14 min-h-full text-white'>
                 <h1 className='text-center text-4xl'>About Me</h1>

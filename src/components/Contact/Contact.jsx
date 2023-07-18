@@ -27,9 +27,9 @@ const Contact = () => {
     }, [])
 
     return (
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" className='contact-bg'>
             <Element name='contact'>
-                <div className='py-14 contact-bg min-h-full flex flex-col items-center'>
+                <div className='py-14 min-h-full flex flex-col items-center container mx-auto'>
                     <h1 className='text-center text-4xl mb-1 text-white'>Get in Touch</h1>
                     <p className='text-center text-sm mb-3  text-white'>Feel free to drop us a line to contact us</p>
                     <div className='w-11/12 m-auto'>

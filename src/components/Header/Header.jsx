@@ -24,21 +24,12 @@ const Header = () => {
     window.addEventListener('scroll', navbarBgChange);
 
     return (
-        <div className='background-img'>
+        <div className='background-img h-[100vh] md:h-[30vh] lg:h-screen 2xl:h-[50vh]'>
 
             <div style={{ zIndex: '999' }} className={navcolor ? 'nav-bg-color fixed top-0 w-full' : ' bg-transparent fixed  top-0 w-full'}  >
-                <header >
-                    {/* className="absolute inset-x-0 top-0 z-50" */}
+                <header className='container mx-auto' >
                     <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
                         <div className="flex lg:flex-1">
-                            {/* <a href="#" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Your Company</span>
-                            <img
-                                className="h-8 w-auto"
-                                src={logo}
-                                alt="logo"
-                            />
-                        </a> */}
                             <Link to='/' spy={true} smooth={true} offset={50} duration={500}><img className='w-full lg:ps-10 cursor-pointer h-8' src={logo} alt="" /></Link>
                         </div>
                         <div className="flex lg:hidden">
@@ -58,9 +49,6 @@ const Header = () => {
                             <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' to='projects' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Projects</Link></li>
                             <li className=' list-none'><Link className=' text-white cursor-pointer bg-transparent' to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></li>
                         </div>
-                        {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                            login
-                        </div> */}
                     </nav>
                     <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                         <div className="fixed inset-0 z-50" />
@@ -96,14 +84,6 @@ const Header = () => {
 
                                         <li className=' list-none'><Link className='flex items-center gap-4 text-white cursor-pointer bg-transparent' to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500}><FaRegEnvelope className='hover:text-blue-800' />Contact</Link></li>
                                     </div>
-                                    {/* <div className="py-6">
-                                    <a
-                                        href="#"
-                                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                    >
-                                        Log in
-                                    </a>
-                                </div> */}
                                 </div>
                             </div>
                         </Dialog.Panel>
@@ -111,7 +91,7 @@ const Header = () => {
                 </header>
             </div>
 
-            <div className="hero min-h-screen ">
+            <div className="hero h-[100vh] md:h-[30vh] lg:h-screen 2xl:h-[50vh]">
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
                         <h2 className='uppercase text-white text-lg font-semibold tracking-widestn'>W e l c o m e</h2>
@@ -133,7 +113,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='fixed hidden md:block text-white top-72 left-8 z-50'>
+            <div className='fixed hidden md:block text-white z-50  translate-y-[-50%] top-1/2 left-5 flex-col'>
                 <a href="https://www.facebook.com/engr.adnanhossain" target="blank" className='m-0 hover:text-blue-700'><FaFacebookSquare className=' w-8 h-8' /></a>
                 <a href="https://github.com/engadnanhossain" target="blank" className='m-0 hover:text-gray-600'><FaGithubSquare className=' w-8 h-8' /></a>
                 <a href="https://www.linkedin.com/in/engadnanhossain" target="blank" className='m-0 hover:text-blue-700'><FaLinkedin className=' w-8 h-8' /></a>

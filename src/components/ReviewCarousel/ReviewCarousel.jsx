@@ -28,9 +28,9 @@ const ReviewCarousel = () => {
                 pagination={{
                     clickable: true,
                 }}
-                navigation={true}
+                // navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
+                className="mySwiper container mx-auto"
             >
                 <SwiperSlide>
                     <div className="w-11/12 m-auto">
@@ -42,7 +42,7 @@ const ReviewCarousel = () => {
                 <SwiperSlide>
                     <div className="w-11/12 m-auto">
                         <img src={person2} className="w-28 h-28 rounded-full mt-16 m-auto" />
-                        <p className='my-10 md:w-1/2 m-auto text-center text-white'>Adnan is the best provider of WordPress services I have ever dealt with, I've worked with him for years and he is sincerer, clever, determined and absolutely wonderful to work with. Thank you again for your tremendous work Adnan.</p>
+                        <p className='my-10 md:w-1/2 m-auto text-center text-white'>Adnan is the best provider of React Js services I have ever dealt with, I've worked with him for years and he is sincerer, clever, determined and absolutely wonderful to work with. Thank you again for your tremendous work Adnan.</p>
                         <p className='text-center text-orange-500 font-bold mb-20'>Joe Smith</p>
                     </div>
                 </SwiperSlide>

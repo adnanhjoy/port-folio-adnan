@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <Element>
             <div className='footer-bg text-white'>
-                <footer className="grid md:grid-cols-4 gap-5 w-11/12 m-auto p-10">
+                <footer className="grid md:grid-cols-4 gap-5 w-11/12 m-auto p-10 container mx-auto">
                     <div className='md:col-span-2 w-5/6'>
                         <h2 className="footer-title mb-4">Expertise</h2>
                         <div className='md:flex justify-between'>
@@ -49,23 +49,19 @@ const Footer = () => {
                     </div>
                     <div className='col-span-1'>
                         <h2 className="footer-title mb-4">Follow Me</h2>
-                        <div className="lg:flex justify-start gap-2">
-                            <div className='flex gap-2 sm:mb-2'>
-                                <a href="https://www.facebook.com/engr.adnanhossain" target="blank" className='m-0 hover:text-blue-700'><FaFacebook className='w-6 h-6' /></a>
-                                <a href="https://twitter.com/engadnanhossain" target="blank" className='m-0 hover:text-blue-500'><FaTwitter className='w-6 h-6' /></a>
-                                <a href="https://www.instagram.com/engadnanhossain" target="blank" className='m-0 hover:text-rose-500'><FaInstagram className='w-6 h-6' /></a>
-                                <a href="https://github.com/engadnanhossain" target="blank" className='m-0 hover:text-white'><FaGithub className='w-6 h-6' /></a>
-                            </div>
-                            <div className='flex gap-2'>
-                                <a href="https://www.pinterest.com/engadnanhossain" target="blank" className='m-0 hover:text-red-500'><FaPinterest className='w-6 h-6' /></a>
-                                <a href="https://www.linkedin.com/in/engadnanhossain" target="blank" className='m-0 hover:text-blue-700'><FaLinkedin className='w-6 h-6' /></a>
-                                <a href="https://www.youtube.com/@sohozcode" target="blank" className='m-0 hover:text-red-700'><FaYoutube className='w-6 h-6' /></a>
-                            </div>
+                        <div className="flex justify-start gap-3">
+                            <a href="https://www.facebook.com/engr.adnanhossain" target="blank" className='m-0 hover:text-blue-700'><FaFacebook className='w-6 h-6' /></a>
+                            <a href="https://twitter.com/engadnanhossain" target="blank" className='m-0 hover:text-blue-500'><FaTwitter className='w-6 h-6' /></a>
+                            <a href="https://www.instagram.com/engadnanhossain" target="blank" className='m-0 hover:text-rose-500'><FaInstagram className='w-6 h-6' /></a>
+                            <a href="https://github.com/engadnanhossain" target="blank" className='m-0 hover:text-white'><FaGithub className='w-6 h-6' /></a>
+                            <a href="https://www.pinterest.com/engadnanhossain" target="blank" className='m-0 hover:text-red-500'><FaPinterest className='w-6 h-6' /></a>
+                            <a href="https://www.linkedin.com/in/engadnanhossain" target="blank" className='m-0 hover:text-blue-700'><FaLinkedin className='w-6 h-6' /></a>
+                            <a href="https://www.youtube.com/@sohozcode" target="blank" className='m-0 hover:text-red-700'><FaYoutube className='w-6 h-6' /></a>
                         </div>
                     </div>
                 </footer>
-                <hr className='w-11/12 m-auto' />
-                <div>
+                <hr className='w-11/12 m-auto container' />
+                <div className='container mx-auto'>
                     <p className='flex items-center justify-center py-6 text-xs'>Copyright <FaRegCopyright className='mx-1' /> 2023 <a className=' link-hover text-primary mx-1' target='blank' href="https://github.com/engadnanhossain">Adnan Hossain</a> All Right Reserved</p>
                 </div>
             </div>

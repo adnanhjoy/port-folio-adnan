@@ -9,7 +9,7 @@ const Skills = () => {
     },[])
 
     return (
-        <div data-aos="fade-up">
+        <div className='container mx-auto' data-aos="fade-up">
             <Element name='skills'>
                 <div className='min-h-full py-14 text-white'>
                     <h1 className='text-center text-4xl'>Skills & Info</h1>

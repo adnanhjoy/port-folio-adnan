@@ -1,0 +1,17 @@
+User-agent: Mediapartners-Google
+Disallow: 
+
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: Yahoo
+Disallow:
+
+User-agent: *
+Disallow: /search
+Allow: /
+
+Sitemap: http://adnanio.web.app/sitemap.xml   

@@ -16,7 +16,7 @@ const About = () => {
                 <h1 className='text-center text-4xl'>About Me</h1>
                 <div className='grid gap-28 md:grid-cols-2 w-3/4 m-auto mt-14'>
                     <div className=' m-auto'>
-                        <img data-aos="zoom-in" src={profile} alt="" />
+                        <img data-aos="zoom-in" src={profile} alt="adnan hossain" />
                     </div>
                     <div data-aos="fade-up">
                         <h1 className='text-3xl'>I'm <span className='font-bold'>Adnan Hossain</span></h1>

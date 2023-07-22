@@ -4,3 +4,15 @@
     width: 100%;
     background-position: top;
 }
+.card2-bg {
+    background-image: url(../src/assets/project/innovatetechshop.png);
+    background-size: cover;
+    width: 100%;
+    background-position: top;
+}
+.card3-bg {
+    background-image: url(../src/assets/project/cardoctor.png);
+    background-size: cover;
+    width: 100%;
+    background-position: top;
+}

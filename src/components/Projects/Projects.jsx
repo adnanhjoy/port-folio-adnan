@@ -28,7 +28,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="relative h-96 hover:opacity-100 card-bg hover:bg-bottom ease-in-out duration-[3s]">
+                        <div className="relative h-96 hover:opacity-100 card2-bg hover:bg-bottom ease-in-out duration-[3s]">
                             <div className=" absolute top-0 bottom-0 left-0 right-0 h-full w-full opacity-0 transition-[.5s] ease-in bg-black hover:opacity-75 cursor-pointer">
                                 <div className='translate-x-[-50%] translate-y-[-50%] top-1/2 left-1/2 absolute flex flex-col'>
                                     <span className='text-white md:text-xl flex justify-center items-center gap-2 hover:bg-[#0f172a] py-1 px-3 rounded mb-3 border'>
@@ -46,7 +46,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="relative h-96 hover:opacity-100 card-bg hover:bg-bottom ease-in-out duration-[3s]">
+                        <div className="relative h-96 hover:opacity-100 card3-bg hover:bg-bottom ease-in-out duration-[3s]">
                             <div className=" absolute top-0 bottom-0 left-0 right-0 h-full w-full opacity-0 transition-[.5s] ease-in bg-black hover:opacity-75 cursor-pointer">
                                 <div className='translate-x-[-50%] translate-y-[-50%] top-1/2 left-1/2 absolute flex flex-col'>
                                     <span className='text-white md:text-xl flex justify-center items-center gap-2 hover:bg-[#0f172a] py-1 px-3 rounded mb-3 border'>

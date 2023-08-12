@@ -1,13 +1,17 @@
 import { Toaster } from 'react-hot-toast'
 import './App.css'
-import Home from './components/Home/Home'
+import Loader from './components/loader/Loader';
+import { Suspense, lazy } from 'react';
+const Home = lazy(() => import('./components/Home/Home'));
 
 function App() {
 
   return (
     <>
-      <Home></Home>
-      <Toaster/>
+      <Suspense fallback={<Loader />}>
+        <Home />
+      </Suspense>
+      <Toaster />
     </>
   )
 }
